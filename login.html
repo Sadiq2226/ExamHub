@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ExamHub</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="./assets/css/ls.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo"><b>ExamHub</b></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="container">
+            <h2>Login to Your Account</h2>
+            <form class="login-form" onsubmit="return handleLogin(event)">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>If you don't have an account, <a href="register.html">register here</a>.</p> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <p>&copy; 2024 ExamHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); 
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>

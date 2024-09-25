@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - ExamHub</title>
+    <link rel="stylesheet" href="./assets/css/ls.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo"><b>ExamHub</b></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="registration">
+        <div class="container">
+            <h2>Create Your Account</h2>
+            <form class="registration-form" onsubmit="return handleRegistration(event)">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Registration Number" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="text" placeholder="Year of Study" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <p>&copy; 2024 ExamHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleRegistration(event) {
+            event.preventDefault(); // Prevent form submission
+            // Here you can add the logic to handle the registration.
+            // For demo purposes, we'll just redirect to the index page.
+            window.location.href = "index.html"; // Redirect to the main page after successful registration
+        }
+    </script>
+</body>
+</html>
